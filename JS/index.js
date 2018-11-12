@@ -22,7 +22,7 @@ function openCars() {
 
         $.each(data, function (key, value) {
             var row = $('<tr></tr>');
-            var name = $('<td  onclick="openValami(' + "'"+value.name+ "'" +')">' + value.name+ '</td>');
+            var name = $('<td>'+value.name+'</td>');
             var color = $('<td>'+value.color+'</td>');
             var manufacturer = $('<td>'+value.manufacturer+'</td>');
             var available = $('<td>'+value.available+'</td>');
@@ -49,7 +49,7 @@ function openManufacturers() {
 
         $.each(data, function (key, value) {
             var row = $('<tr></tr>');
-            var Name = $('<td  onclick="openValami(' + "'"+value.name+ "'" +')">' + value.name+ '</td>');
+            var Name = $('<td>'+value.name+'</td>');
             var Country = $('<td>'+value.country+'</td>');
             var Founded = $('<td>'+value.founded+'</td>');
             row.append(Name);
@@ -62,3 +62,4 @@ function openManufacturers() {
         $("#table").html(table);
     })
 }
+
