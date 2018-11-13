@@ -1,16 +1,21 @@
 div.gallery {
-    margin: 5px;
+
     border: 1px solid #ccc;
-    float: left;
+    margin:auto;
     width: 300px;
+    border-radius: 8px;
 }
 
 div.gallery img {
     width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
 div.desc {
     padding: 15px;
     text-align: center;
+}
+#footer{
+   float: right;
 }

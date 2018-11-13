@@ -1,11 +1,17 @@
-#upload {
+#uploadManufacturers {
+    width: 450px;
+    height: 200px;
     float: left;
     margin-top: 20px;
     margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow:  10px 10px 5px black;
+    background-image: linear-gradient(to left, darkgray, gray)
 
 }
 
-#dbTable {
+#tableManufacturers {
     float: right;
     margin-top: 20px;
     margin-right: 20px;
@@ -14,17 +20,17 @@
     box-shadow: 5px 5px 2px black;
 }
 
-#dbTable th {
+#tableManufacturers th {
     background-color: #0977B4;
     color: white;
     border-bottom: 1px solid darkslategray;
 }
 
-#dbTable tr:nth-child(even) {
+#tableManufacturers tr:nth-child(even) {
     background-color: lightgray
 }
 
-#dbTable tr:hover {
+#tableManufacturers tr:hover {
     background-color: darkslategray;
 }
 

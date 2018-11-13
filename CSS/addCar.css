@@ -1,11 +1,20 @@
 #upload {
+    width: 450px;
+    height: 400px;
     float: left;
     margin-top: 20px;
     margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow:  10px 10px 5px black;
+    background-image: linear-gradient(to left, darkgray, gray)
 
 }
+#submit{
+    margin: auto;
+}
 
-#dbTable {
+#tableCar {
     float: right;
     margin-top: 20px;
     margin-right: 20px;
@@ -15,17 +24,17 @@
 
 }
 
-#dbTable th {
+#tableCar th {
     background-color: #0977B4;
     color: white;
     border-bottom: 1px solid darkslategray;
 }
 
-#dbTable tr:nth-child(even) {
+#tableCar tr:nth-child(even) {
     background-color: lightgray
 }
 
-#dbTable tr:hover {
+#tableCar tr:hover {
     background-color: darkslategray;
 }
 

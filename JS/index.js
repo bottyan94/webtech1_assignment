@@ -40,7 +40,7 @@ function openCars() {
 
 
 
-        $("#dbTable").html(table);
+        $("#tableCar").html(table);
     })}
 
 function openManufacturers() {
@@ -60,9 +60,10 @@ function openManufacturers() {
         })
 
 
-        $("#dbTable").html(table);
+        $("#tableManufacturers").html(table);
     })
 }
+
 function LOL() {
 
 }
