@@ -1,0 +1,34 @@
+#upload {
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+#dbTable {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: center;
+    background: darkgray;
+    box-shadow: 5px 5px 2px black;
+
+}
+
+#dbTable th {
+    background-color: #0977B4;
+    color: white;
+    border-bottom: 1px solid darkslategray;
+}
+
+#dbTable tr:nth-child(even) {
+    background-color: lightgray
+}
+
+#dbTable tr:hover {
+    background-color: darkslategray;
+}
+
+
+
+

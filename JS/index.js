@@ -15,6 +15,7 @@ $(document).ready(function () {
     })});
 
 
+
 function openCars() {
     $.getJSON('cars', function (data) {
         var table = $('<table></table>');
@@ -39,7 +40,7 @@ function openCars() {
 
 
 
-        $("#table").html(table);
+        $("#dbTable").html(table);
     })}
 
 function openManufacturers() {
@@ -59,7 +60,10 @@ function openManufacturers() {
         })
 
 
-        $("#table").html(table);
+        $("#dbTable").html(table);
     })
+}
+function LOL() {
+
 }
 

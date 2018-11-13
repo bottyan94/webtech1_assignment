@@ -1,8 +1,10 @@
+<link rel="stylesheet" type="text/css" href="CSS/addCar.css">
+
 <script type="application/javascript" src="JS/jquery-3.3.1.min.js"></script>
 <script type="application/javascript" src="JS/addCar.js"></script>
 
 <form action="addCar" method="post">
-    <table>
+    <table id="upload">
         <tr>
             <td>Name</td>
             <td><input name="name" type="text" required="required"></td>
@@ -40,10 +42,10 @@
 
         <tr>
             <td><input id="submit" type="submit" value="Add Car"></td>
-            <td><input id="open" type="button" value="Open Manufacturers" onclick="openCars()"></td>
+            <td><input id="open" type="button" value="Open Cars" onclick="openCars()"></td>
         </tr>
     </table>
-    <div id="table">
+    <div class="dbTable" id="dbTable">
 
     </div>
 </form>

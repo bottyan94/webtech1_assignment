@@ -1,7 +1,9 @@
+<link rel="stylesheet" type="text/css" href="CSS/addCar.css">
+
 <script type="application/javascript" src="JS/jquery-3.3.1.min.js"></script>
 <script type="application/javascript" src="JS/addManufacturers.js"></script>
 <form action="addManufacturers" method="post">
-    <table>
+    <table id="upload">
         <tr>
             <td>Name</td>
             <td><input type="text" name="name" required="required"></td>
@@ -16,12 +18,13 @@
             <td>Founded</td>
             <td><input type="date" name="founded" required="required"></td>
         </tr>
+        <tr>
+            <td><input id="submit" type="submit" value="Add Manufacturers"></td>
+            <td><input id="open" type="button" value="Open Manufacturers" onclick="openManufacturers()"></td>
+        </tr>
     </table>
-    <tr>
-        <td><input id="submit" type="submit" value="Add Manufacturers"></td>
-        <td><input id="open" type="button" value="Open Manufacturers" onclick="openManufacturers()"></td>
-    </tr>
-    <div id="table">
+
+    <div id="dbTable">
 
     </div>
 </form>
