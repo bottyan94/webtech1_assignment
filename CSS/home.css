@@ -19,7 +19,49 @@ div.desc {
 #footer{
    float: right;
 }
-#img{
+.dropdown{
+    margin: auto;
+    position: relative;
+    display: inline-block;
+
+
+}
+
+.fadeOverlay{
+    position: relative;
     height:200px;
     width:300px;
+    margin: auto;
+}
+
+.image{
+    display: block;
+    height: 200px;
+    width: 300px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #0977B4;
+
+}
+.fadeOverlay:hover .overlay{
+    opacity: 1;
+}
+.text{
+    position: absolute;
+    color:whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
 }
