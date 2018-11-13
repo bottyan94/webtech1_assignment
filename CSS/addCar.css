@@ -10,6 +10,9 @@
     background-image: linear-gradient(to left, darkgray, gray)
 
 }
+#upload td,th,tr{
+    border-radius: 5px;
+}
 #submit{
     margin: auto;
 }
@@ -20,6 +23,7 @@
     margin-right: 20px;
     text-align: center;
     background: darkgray;
+    border-radius: 5px;
     box-shadow: 5px 5px 2px black;
 
 }

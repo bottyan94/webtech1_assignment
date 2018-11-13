@@ -64,7 +64,4 @@ function openManufacturers() {
     })
 }
 
-function LOL() {
-
-}
 

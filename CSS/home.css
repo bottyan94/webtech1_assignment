@@ -19,3 +19,7 @@ div.desc {
 #footer{
    float: right;
 }
+#img{
+    height:200px;
+    width:300px;
+}
