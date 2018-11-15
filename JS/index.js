@@ -1,35 +1,38 @@
 $(document).ready(function () {
     $("#content").load("home.html");
 
-    $.each($('.menuButton'),function (mbIndex, mbValue) {
+    $.each($('.menuButton'), function (mbIndex, mbValue) {
 
 
         $(mbValue).click(function (event) {
             event.preventDefault();
-            if (($(this).find('a').attr("href")) != "index.html"){
+            if (($(this).find('a').attr("href")) != "index.html") {
                 $('#content').load($(this).find('a').attr("href"));
                 $('#table').load($(this).find('a'))
-            } else
-            {open("index.html","_self")}
+            } else {
+                open("index.html", "_self")
+            }
         })
-    })});
-
+    })
+});
 
 
 function openCars() {
     $.getJSON('cars', function (data) {
         var table = $('<table></table>');
-        table.append('<tr><th>Name</th><th>Color</th><th>Manufacturer</th><th>Available</th><th>Year</th><th>Horsepower</th>');
+        table.append('<tr><th>Name</th><th>Consumption</th><th>Color</th><th>Manufacturer</th><th>Available</th><th>Year</th><th>Horsepower</th>');
 
         $.each(data, function (key, value) {
             var row = $('<tr></tr>');
-            var name = $('<td>'+value.name+'</td>');
-            var color = $('<td>'+value.color+'</td>');
-            var manufacturer = $('<td>'+value.manufacturer+'</td>');
-            var available = $('<td>'+value.available+'</td>');
-            var year = $('<td>'+value.year+'</td>');
-            var horsepower=$('<td>'+value.horsepower+'</td>');
+            var name = $('<td>' + value.name + '</td>');
+            var consumption =$('<td>'+value.consumption+'</td>');
+            var color = $('<td>' + value.color + '</td>');
+            var manufacturer = $('<td>' + value.manufacturer + '</td>');
+            var available = $('<td>' + value.available + '</td>');
+            var year = $('<td>' + value.year + '</td>');
+            var horsepower = $('<td>' + value.horsepower + '</td>');
             row.append(name);
+            row.append(consumption);
             row.append(color);
             row.append(manufacturer);
             row.append(available);
@@ -38,10 +41,19 @@ function openCars() {
             table.append(row);
         })
 
-
-
+        $("#tableManufacturers").empty();
         $("#tableCar").html(table);
-    })}
+    })
+}
+
+function CookieManufacturers(man) {
+    document.cookie = "name="+man;
+    $.getJSON("manufacturer",function (data) {
+      for (var i=0;i<data.length;i++) {
+          alert(data[i].name);
+      }
+    })
+}
 
 function openManufacturers() {
     $.getJSON('manufacturers', function (data) {
@@ -50,18 +62,31 @@ function openManufacturers() {
 
         $.each(data, function (key, value) {
             var row = $('<tr></tr>');
-            var Name = $('<td>'+value.name+'</td>');
-            var Country = $('<td>'+value.country+'</td>');
-            var Founded = $('<td>'+value.founded+'</td>');
+            var Name = $('<td onclick="CookieManufacturers('+"'"+value.name+"'"+')">' + value.name + '</td>');
+            var Country = $('<td>' + value.country + '</td>');
+            var Founded = $('<td>' + value.founded + '</td>');
             row.append(Name);
             row.append(Country);
             row.append(Founded);
             table.append(row);
         })
 
-
+        $("#tableCar").empty();
         $("#tableManufacturers").html(table);
     })
 }
 
-
+function carsTableLoad() {
+    if ($('#tableCar').is(':empty')) {
+        openCars();
+    } else {
+        $('#tableCar').empty();
+    }
+}
+function manufacturersTableLoad() {
+    if ($('#tableManufacturers').is(':empty')) {
+        openManufacturers();
+    } else {
+        $('#tableManufacturers').empty();
+    }
+}
