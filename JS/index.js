@@ -49,11 +49,41 @@ function openCars() {
 function CookieManufacturers(man) {
     document.cookie = "name="+man;
     $.getJSON("manufacturer",function (data) {
-      for (var i=0;i<data.length;i++) {
-          alert(data[i].name);
-      }
-    })
+          var table = $('<table></table>');
+          table.append('<tr><th>Name</th><th>Consumption</th><th>Color</th><th>Manufacturer</th><th>Available</th><th>Year</th><th>Horsepower</th>');
+
+          $.each(data, function (key, value) {
+              var row = $('<tr></tr>');
+              var name = $('<td>' + value.name + '</td>');
+              var consumption =$('<td>'+value.consumption+'</td>');
+              var color = $('<td>' + value.color + '</td>');
+              var manufacturer = $('<td>' + value.manufacturer + '</td>');
+              var available = $('<td>' + value.available + '</td>');
+              var year = $('<td>' + value.year + '</td>');
+              var horsepower = $('<td>' + value.horsepower + '</td>');
+              row.append(name);
+              row.append(consumption);
+              row.append(color);
+              row.append(manufacturer);
+              row.append(available);
+              row.append(year);
+              row.append(horsepower);
+              table.append(row);
+          })
+
+          $("#selectTable").html(table);
+      })
 }
+/*
+function CookieManufacturers2(man) {
+    document.cookie = "name="+man;
+    $.getJSON("manufacturer",function (data) {
+        for (var i=0;i<data.length;i++) {
+            alert(data[i].name);
+        }
+    })
+}*/
+
 
 function openManufacturers() {
     $.getJSON('manufacturers', function (data) {
