@@ -1,7 +1,7 @@
 #uploadManufacturers {
     width: 450px;
     height: 200px;
-    float: left;
+    float: right;
     margin-top: 20px;
     margin-left: 20px;
     border: 1px solid black;
@@ -12,7 +12,7 @@
 }
 
 #tableManufacturers {
-    float: right;
+
     margin-top: 20px;
     margin-right: 20px;
     text-align: center;
@@ -36,5 +36,28 @@
 }
 
 
+#selectTable {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: center;
+    background: darkgray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px black;
+}
+
+#selectTable th {
+    background-color: #0977B4;
+    color: white;
+    border-bottom: 1px solid darkslategray;
+}
+
+#selectTable tr:nth-child(even) {
+    background-color: lightgray
+}
+
+#selectTable tr:hover {
+    background-color: darkslategray;
+}
 
 

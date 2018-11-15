@@ -8,7 +8,8 @@ $(function (){
             data: $('form').serialize(),
             success: function () {
                 openManufacturers();
-            },
+
+                },
             error:function () {
                 alert("oops");
             }
