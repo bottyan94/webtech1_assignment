@@ -7,10 +7,12 @@
     border: 1px solid black;
     border-radius: 15px;
     box-shadow:  10px 10px 5px black;
-    background-image: linear-gradient(to left, darkgray, gray)
+    background-image: linear-gradient(to left, darkgray, gray);
+    text-align: left;
 
 }
 #upload td,th,tr{
+
     border-radius: 5px;
 }
 #submit{

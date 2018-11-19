@@ -74,16 +74,6 @@ function CookieManufacturers(man) {
           $("#selectTable").html(table);
       })
 }
-/*
-function CookieManufacturers2(man) {
-    document.cookie = "name="+man;
-    $.getJSON("manufacturer",function (data) {
-        for (var i=0;i<data.length;i++) {
-            alert(data[i].name);
-        }
-    })
-}*/
-
 
 function openManufacturers() {
     $.getJSON('manufacturers', function (data) {
@@ -109,6 +99,7 @@ function openManufacturers() {
 function carsTableLoad() {
     if ($('#tableCar').is(':empty')) {
         openCars();
+        i
     } else {
         $('#tableCar').empty();
     }
@@ -116,9 +107,13 @@ function carsTableLoad() {
 function manufacturersTableLoad() {
     if ($('#tableManufacturers').is(':empty')) {
         openManufacturers();
+
+
     } else {
         $('#tableManufacturers').empty();
+
     }
 }
+
 
 

@@ -67,40 +67,23 @@ home css*/
     position: relative;
 
 }
-
-
-.fadeOverlay {
-    position: absolute;
-    height: 400px;
-    width: 500px;
-}
-
-
-
 .image {
-    position:absolute;
+    height: 200px;
+    width: 300px;
+    transition: width 3s, height 3s;
+
+}
+#imageDiv {
     padding-top: 30px;
     height: 400px;
-    width: 500px;
+    width: 600px;
     margin: auto;
-}
-
-.overlay {
-
-    position: absolute;
-    top:30px;
-    bottom: 0;
-    left: 0;
-    height:100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
     background-color: #0977B4;
 
 }
-
-.fadeOverlay:hover .overlay {
-    opacity: 1;
+.image:active{
+    width: 600px;
+    height: 400px;
 }
 
 .text {
@@ -113,9 +96,6 @@ home css*/
     transform: translate(-50%, -50%);
 
 }
-
-
-
 
 #tableCar {
     position: center;
