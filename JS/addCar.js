@@ -9,6 +9,7 @@ $(function (){
             data: $('form').serialize(),
             success: function () {
                 openCars();
+                alert("Succesfull!");
             },
             error:function () {
                 alert("oops");

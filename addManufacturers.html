@@ -3,25 +3,36 @@
 <script type="application/javascript" src="JS/jquery-3.3.1.min.js"></script>
 <script type="application/javascript" src="JS/addManufacturers.js"></script>
 <form action="addManufacturers" method="post">
+
     <table id="uploadManufacturers">
         <tr>
-            <td>Name</td>
-            <td><input type="text" name="name" required="required"></td>
+            <td>
+            <table id="inputData">
+
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="name" required="required"></td>
+                </tr>
+
+                <tr>
+                    <td>Country</td>
+                    <td><input type="text" name="country" required="required"></td>
+                </tr>
+
+                <tr>
+                    <td>Founded</td>
+                    <td><input type="date" name="founded" required="required"></td>
+                </tr>
+
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td id="submitTD">
+                <input id="submit" type="submit" value="Add Manufacturers">
+            </td>
         </tr>
 
-        <tr>
-            <td>Country</td>
-            <td><input type="text" name="country" required="required"></td>
-        </tr>
-
-        <tr>
-            <td>Founded</td>
-            <td><input type="date" name="founded" required="required"></td>
-        </tr>
-        <tr>
-            <td><input id="submit" type="submit" value="Add Manufacturers"></td>
-
-        </tr>
     </table>
     <div id="tableManufacturers"></div>
 

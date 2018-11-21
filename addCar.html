@@ -4,7 +4,10 @@
 <script type="application/javascript" src="JS/addCar.js"></script>
 
 <form action="addCar" method="post">
-    <table id="upload">
+    <table id="uploadCars">
+        <tr>
+            <td>
+                <table id="inputData">
         <tr>
             <td>Name</td>
             <td><input name="name" type="text" required="required"></td>
@@ -23,7 +26,7 @@
         <tr>
             <td>Manufacturer</td>
             <td>
-                <select name="manufacturer" id="ManufacturerNameList"></select>
+                <select id="ManufacturerNameList" name="manufacturer" ></select>
             </td>
         </tr>
 
@@ -41,9 +44,11 @@
             <td>Horsepower</td>
             <td><input name="horsepower" type="text" required="required"></td>
         </tr>
-
-        <tr>
-            <td><input id="submit" type="submit" value="Add Car"></td>
+                </table>
+            </td>
+        </tr>
+        <td id="submitTD">
+            <input id="submit" type="submit"value="Add Car"></td>
         </tr>
     </table>
     <div id="tableCar">

@@ -8,6 +8,7 @@ $(function (){
             data: $('form').serialize(),
             success: function () {
                 openManufacturers();
+                alert("Succesfull!");
 
                 },
             error:function () {

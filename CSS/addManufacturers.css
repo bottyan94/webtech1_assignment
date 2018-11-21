@@ -1,21 +1,26 @@
+#inputData{
+    width: 100%;
+    padding-left: 10%;
+}
+
 #uploadManufacturers {
-    width: 450px;
-    height: 200px;
+    width: 300px;
+    height: 150px;
     float: right;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 3%;
+    margin-right:3%;
     border: 1px solid black;
     border-radius: 15px;
     box-shadow:  10px 10px 5px black;
     background-image: linear-gradient(to left, darkgray, gray);
     text-align: left;
-
+    padding-left: 10px;
 }
 
 #tableManufacturers {
-
-    margin-top: 20px;
-    margin-right: 20px;
+    float: left;
+    margin-top: 3%;;
+    margin-left:3%;
     text-align: center;
     background: darkgray;
     border-radius: 5px;
@@ -37,10 +42,22 @@
 }
 
 
+#submitTD{
+    padding-left: 30%;
+}
+#submit{
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+
+
 #selectTable {
-    float: right;
-    margin-top: 20px;
-    margin-right: 20px;
+    float: left;
+    margin-top: 5%;
+    margin-left: 2%;
     text-align: center;
     background: darkgray;
     border-radius: 5px;
@@ -60,5 +77,6 @@
 #selectTable tr:hover {
     background-color: darkslategray;
 }
+
 
 
