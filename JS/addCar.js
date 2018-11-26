@@ -1,5 +1,5 @@
 $(openCars());
-$(function (){
+$(function () {
     $('form').on("submit", function (e) {
         e.preventDefault();
 
@@ -11,18 +11,18 @@ $(function (){
                 openCars();
                 alert("Succesfull!");
             },
-            error:function () {
+            error: function () {
                 alert("oops");
             }
         })
     })
 })
 $(function ManufacturersName() {
-    $.getJSON('manufacturerNames',function (data) {
-        var output=[];
+    $.getJSON('manufacturerNames', function (data) {
+        var output = [];
 
-        $.each(data,function (key,value) {
-            output.push('<option value="'+value+'">'+value+'</option>');
+        $.each(data, function (key, value) {
+            output.push('<option value="' + value + '">' + value + '</option>');
         })
         $('#ManufacturerNameList').html(output);
     })
