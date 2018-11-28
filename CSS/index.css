@@ -16,11 +16,10 @@ a:visited {
 #button1, #button2 {
     width: 150px;
     height: 30px;
-    border: 1px solid black;
     border-radius: 15px;
     color: white;
     background-color: gray;
-    border: 5px solid white;
+    border: 1px solid white;
 }
 #button1:HOVER, #button2:HOVER {
     background: #0977B4;
