@@ -17,7 +17,7 @@ $(function () {
         })
     })
 })
-$(function ManufacturersName() {
+$(function getManufacturersNames() {
     $.getJSON('manufacturerNames', function (data) {
         var output = [];
 
@@ -27,4 +27,32 @@ $(function ManufacturersName() {
         $('#ManufacturerNameList').html(output);
     })
 });
+
+$($('input').change(function () {
+    var y = $('#year').val();
+    if (y !== null) {
+        if (y < 1995) {
+            $('#year').val(2018);
+        }
+        if (n > 2018) {
+            $('#year').val(2018);
+        }
+    }
+    var a = $('#available').val();
+    if (a !== null){
+        if (a<0) {
+            $('#available').val(1);
+        }
+    }
+
+    var h = $('#horsepower').val();
+    if (h !== null){
+        if (h<25) {
+            $('#horsepower').val(90);
+        }
+    }
+
+
+}))
+
 

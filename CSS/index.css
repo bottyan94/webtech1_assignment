@@ -44,14 +44,14 @@ a:visited {
     float: right;
     background-image: linear-gradient(to left, darkgray, gray);
     border-radius: 25px;
-    box-shadow: 10px 10px 5px black;
+    box-shadow: 10px 15px 30px black;
 
 }
 
 #menuBar .menuButton {
-    margin-top: 17px;
-    margin-left: 100px;
-    width: 300px;
+    margin-top: 1.5%;
+    margin-left: 10%;
+    width: 20%;
     display: inline-block;
     text-align: center;
     border: 5px solid white;
@@ -110,7 +110,7 @@ home css*/
     text-align: center;
     background: darkgray;
     border-radius: 5px;
-    box-shadow: 5px 5px 2px black;
+    box-shadow: 10px 15px 30px black;
 
 }
 
@@ -135,7 +135,7 @@ home css*/
     text-align: center;
     background: darkgray;
     border-radius: 5px;
-    box-shadow: 5px 5px 2px black;
+    box-shadow: 10px 15px 30px black;
 
 }
 

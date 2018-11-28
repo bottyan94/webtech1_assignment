@@ -11,10 +11,13 @@
     margin-right:3%;
     border: 1px solid black;
     border-radius: 15px;
-    box-shadow:  10px 10px 5px black;
+    box-shadow: 10px 15px 30px black;
     background-image: linear-gradient(to left, darkgray, gray);
     text-align: left;
     padding-left: 10px;
+}
+#uploadManufacturers date{
+    width: 100%;
 }
 
 #tableManufacturers {
@@ -24,7 +27,7 @@
     text-align: center;
     background: darkgray;
     border-radius: 5px;
-    box-shadow: 5px 5px 2px black;
+    box-shadow: 10px 15px 30px black;
 }
 
 #tableManufacturers th {
@@ -61,7 +64,7 @@
     text-align: center;
     background: darkgray;
     border-radius: 5px;
-    box-shadow: 5px 5px 2px black;
+    box-shadow: 10px 15px 30px black;
 }
 
 #selectTable th {
