@@ -11,11 +11,20 @@ a:visited {
     color: whitesmoke;
 }
 
+
+
 #button1, #button2 {
     width: 150px;
     height: 30px;
     border: 1px solid black;
     border-radius: 15px;
+    color: white;
+    background-color: gray;
+    border: 5px solid white;
+}
+#button1:HOVER, #button2:HOVER {
+    background: #0977B4;
+
 }
 
 #content {
@@ -73,10 +82,12 @@ home css*/
 
 }
 
-.image {
+#tesla {
     height: 200px;
     width: 300px;
     transition: width 3s, height 3s;
+
+
 
 }
 
@@ -88,7 +99,7 @@ home css*/
 
 }
 
-.image:active {
+#tesla:active {
     width: 600px;
     height: 400px;
 }
@@ -111,6 +122,8 @@ home css*/
     background: darkgray;
     border-radius: 5px;
     box-shadow: 10px 15px 30px black;
+
+    transition: visibility;
 
 }
 

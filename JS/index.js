@@ -41,6 +41,8 @@ function openCars() {
             table.append(row);
         })
 
+
+
         $("#tableManufacturers").empty();
         $("#tableCar").html(table);
     })
@@ -98,18 +100,21 @@ function openManufacturers() {
 
 function carsTableLoad() {
     if ($('#tableCar').is(':empty')) {
+        document.getElementById("tesla").style.display="none";
         openCars();
     } else {
         $('#tableCar').empty();
+        document.getElementById("tesla").style.display="";
     }
 }
 
 function manufacturersTableLoad() {
     if ($('#tableManufacturers').is(':empty')) {
+        document.getElementById("tesla").style.display="none";
         openManufacturers();
     } else {
         $('#tableManufacturers').empty();
-
+        document.getElementById("tesla").style.display="";
     }
 }
 
