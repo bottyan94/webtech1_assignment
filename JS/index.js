@@ -104,7 +104,7 @@ function carsTableLoad() {
         openCars();
     } else {
         $('#tableCar').empty();
-        document.getElementById("tesla").style.display="";
+        document.getElementById("tesla").style.display="inline-block";
     }
 }
 
@@ -114,7 +114,7 @@ function manufacturersTableLoad() {
         openManufacturers();
     } else {
         $('#tableManufacturers').empty();
-        document.getElementById("tesla").style.display="";
+        document.getElementById("tesla").style.display="inline-block";
     }
 }
 
